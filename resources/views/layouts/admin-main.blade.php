@@ -43,8 +43,8 @@
                                 </button>
                                 <div x-show="open" @click.away="open = false" class="absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded shadow-lg">
                                     <!-- Dropdown Pilihan untuk Menavigasi ke Dashboard -->
-                                    <a href="{{ route('admin-enose-dashboard') }}" class="text-sm block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600">Enose</a>
-                                    <a href="{{ route('admin-edge-dashboard') }}" class="text-sm block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600">Edge</a>
+                                    <a href="{{ route('admin-enose-dashboard') }}" class="text-sm block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600">E-Nose Dashboard</a>
+                                    <a href="{{ route('admin-edge-dashboard') }}" class="text-sm block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600">Edge Dashboard</a>
                                 </div>
                             </div>
                         </h2>
@@ -56,9 +56,9 @@
                         <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                             <div class="p-3 mr-4 text-orange-500 bg-orange-100 rounded-full dark:text-orange-100 dark:bg-orange-500">
                                 <svg class="w-5 h-5" fill="currentColor" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.9999 2C9.36406 2 7.91172 2.78555 6.99951 4C9.24074 4 11.1953 5.22884 12.2255 7.04952C12.4791 7.01685 12.7376 7 13 7H15.9999V3.33505C15.9999 2.59772 15.4022 2 14.6648 2H10.9999Z"/>
-                                    <path d="M7.33746 14.9888C7.22594 14.9962 7.11341 15 7 15C4.23858 15 2 12.7614 2 10V6.33505C2 5.59772 2.59772 5 3.33505 5H7C8.75691 5 10.3022 5.90616 11.1939 7.2766C9.72989 7.73815 8.50822 8.74592 7.76795 10.0609L6.35355 8.64649C6.15829 8.45123 5.84171 8.45123 5.64645 8.64649C5.45118 8.84176 5.45118 9.15834 5.64645 9.3536L7.32882 11.036C7.11575 11.6513 7 12.3122 7 13C7 13.6971 7.11888 14.3664 7.33746 14.9888Z"/>
-                                    <path d="M8 13C8 10.2386 10.2386 8 13 8H16.6649C17.4023 8 18 8.59772 18 9.33505V13C18 15.7614 15.7614 18 13 18C11.7994 18 10.6976 17.5768 9.83568 16.8715L8.85363 17.8536C8.65837 18.0488 8.34178 18.0488 8.14652 17.8536C7.95126 17.6583 7.95126 17.3417 8.14652 17.1464L9.12856 16.1644C8.4232 15.3025 8 14.2007 8 13Z"/>
+                                    <path d="M10.9999 2C9.36406 2 7.91172 2.78555 6.99951 4C9.24074 4 11.1953 5.22884 12.2255 7.04952C12.4791 7.01685 12.7376 7 13 7H15.9999V3.33505C15.9999 2.59772 15.4022 2 14.6648 2H10.9999Z" />
+                                    <path d="M7.33746 14.9888C7.22594 14.9962 7.11341 15 7 15C4.23858 15 2 12.7614 2 10V6.33505C2 5.59772 2.59772 5 3.33505 5H7C8.75691 5 10.3022 5.90616 11.1939 7.2766C9.72989 7.73815 8.50822 8.74592 7.76795 10.0609L6.35355 8.64649C6.15829 8.45123 5.84171 8.45123 5.64645 8.64649C5.45118 8.84176 5.45118 9.15834 5.64645 9.3536L7.32882 11.036C7.11575 11.6513 7 12.3122 7 13C7 13.6971 7.11888 14.3664 7.33746 14.9888Z" />
+                                    <path d="M8 13C8 10.2386 10.2386 8 13 8H16.6649C17.4023 8 18 8.59772 18 9.33505V13C18 15.7614 15.7614 18 13 18C11.7994 18 10.6976 17.5768 9.83568 16.8715L8.85363 17.8536C8.65837 18.0488 8.34178 18.0488 8.14652 17.8536C7.95126 17.6583 7.95126 17.3417 8.14652 17.1464L9.12856 16.1644C8.4232 15.3025 8 14.2007 8 13Z" />
                                 </svg>
                             </div>
                             <div>
@@ -75,7 +75,7 @@
                             <div class="p-3 mr-4 text-green-500 bg-green-100 rounded-full dark:text-green-100 dark:bg-green-500">
                                 <svg class="w-6 h-6 fill-current text-green-500 dark:text-green-100" enable-background="new 0 0 64 64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                                     <g>
-                                        <path d="M63.8,31.5L53.4,9.9c-0.5-1-1.6-1.7-2.9-1.7h-7.6h-2.4H2.8c-1.6,0-2.9,1.3-2.9,2.9v30.5v2.4v9.8c0,1.2,0.9,2.1,2.1,2.1h38.4v0h21.4c1.2,0,2.2-1,2.2-2.2v-9.7v-2.4v-9C64.1,32.2,64,31.8,63.8,31.5z M43,10.7h7.5c0.3,0,0.6,0.2,0.7,0.3l10.5,21.6c0,0,0,0,0,0.1v8.8H43V10.7z M2.4,11c0-0.2,0.2-0.4,0.4-0.4h37.5v30.7H2.4V11z M40.3,53.3H2.4v-9.3h37.9V53.3z M61.6,53.3H43v-9.3h18.6V53.3z"/>
+                                        <path d="M63.8,31.5L53.4,9.9c-0.5-1-1.6-1.7-2.9-1.7h-7.6h-2.4H2.8c-1.6,0-2.9,1.3-2.9,2.9v30.5v2.4v9.8c0,1.2,0.9,2.1,2.1,2.1h38.4v0h21.4c1.2,0,2.2-1,2.2-2.2v-9.7v-2.4v-9C64.1,32.2,64,31.8,63.8,31.5z M43,10.7h7.5c0.3,0,0.6,0.2,0.7,0.3l10.5,21.6c0,0,0,0,0,0.1v8.8H43V10.7z M2.4,11c0-0.2,0.2-0.4,0.4-0.4h37.5v30.7H2.4V11z M40.3,53.3H2.4v-9.3h37.9V53.3z M61.6,53.3H43v-9.3h18.6V53.3z" />
                                         <rect width="31.5" height="24.8" x="5.6" y="13.7" class="fill-current" />
                                         <line stroke="currentColor" stroke-miterlimit="10" stroke-width="1.5" x1="25.4" x2="34.9" y1="49.9" y2="49.9" />
                                         <line stroke="currentColor" stroke-miterlimit="10" stroke-width="1.5" x1="5.6" x2="5.6" y1="43.9" y2="55.8" />
@@ -164,25 +164,25 @@
                                     <div class="flex items-center space-x-1 mt-1">
                                         <span
                                             class="inline-block w-3 h-3 {{ $colors[$index % count($colors)] }} rounded-full" ></span>
-                                        <span>{{ $label }}</span>
-                                    </div>
-                                @endforeach --}}
+                                <span>{{ $label }}</span>
                             </div>
-
+                            @endforeach --}}
                         </div>
-                        <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
-                            <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
-                                Traffic
-                            </h4>
-                            <canvas id="lineChart"></canvas>
 
-                            <script>
-                                const lineLabels = @json($labels_Line);
-                                const lineDatasets = @json($datasets);
-                            </script>
+                    </div>
+                    <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+                        <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
+                            Traffic
+                        </h4>
+                        <canvas id="lineChart"></canvas>
 
-                            <script src="{{ asset('js/line.js') }}"></script>
-                </div>
+                        <script>
+                            const lineLabels = @json($labels_Line);
+                            const lineDatasets = @json($datasets);
+                        </script>
+
+                        <script src="{{ asset('js/line.js') }}"></script>
+                    </div>
             </main>
         </div>
     </div>

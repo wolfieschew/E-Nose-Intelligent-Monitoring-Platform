@@ -104,11 +104,11 @@ class AuthController extends Controller
             $user->password = Hash::make($request->password);
             $user->user_group = 'user'; // Default role user
             $user->status = 'active'; // Default status aktif
+            $user->chatID = $request->chatID ?? 'default';
             $user->save();
 
-            // Kirim notifikasi sukses dan arahkan ke halaman login
-            return redirect()->route('show.user-management')->with('success', 'Akun berhasil dibuat!');
-
+            // Redirect ke halaman login yang sudah ada
+            return redirect()->route('show.login')->with('success', 'Akun berhasil dibuat! Silakan login.');
         } catch (\Exception $e) {
             return redirect()->route('show.register')->withErrors([
                 'register_error' => 'Terjadi kesalahan saat membuat akun. Silakan coba lagi.',
