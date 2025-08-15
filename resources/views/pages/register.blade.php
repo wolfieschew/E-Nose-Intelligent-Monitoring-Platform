@@ -16,16 +16,13 @@
 
 <body>
     <div class="flex h-screen w-full">
-    <!-- Kiri -->
     <div class="w-[80%] [background:linear-gradient(65deg,#B40A32,#FF88A4)] flex items-center justify-center">
         <img src="{{ asset('assets/img/IMRON Mascot Transparent.png') }}" alt="Logo IMRON" class="w-1/2 h-auto" />
     </div>
-    <!-- Kanan -->
     <div class="w-2/5 bg-white flex items-center justify-center">
         <div class="flex flex-col items-center">
             <img src="{{ asset('assets/img/IMRON Title.svg') }}" alt="Logo IMRON" class="w-1/2 h-auto m-8" />
             <div class="w-[50vh]">
-                <!-- Menampilkan notifikasi sukses jika ada -->
                         @if(session('success'))
                         <div class="bg-green-500 text-white p-4 rounded mb-4">
                             {{ session('success') }}

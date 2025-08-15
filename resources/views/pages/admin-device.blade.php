@@ -22,9 +22,12 @@
         @include('components.admin-sidebar')
 
         <div class="flex flex-col flex-1 w-full">
-            {{-- Include Navbar --}}
-            @include('components.navbar')
-            <main class="h-full overflow-y-auto">
+            <div class="block sm:hidden">
+                {{-- Include Navbar --}}
+                @include('components.navbar')
+            </div>
+
+            <main class="flex-1 ml-0 sm:ml-[20%] overflow-y-auto">
                 <div class="container px-6 mx-auto grid">
                     <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
                         Device
@@ -32,10 +35,10 @@
                     {{-- Tombol Add & Edit Device --}}
                     <div class="flex gap-2 mb-4">
                         @include('components.form-device', ['users' => $users, 'data' => $data])
-                        <button @click="editDeviceOpen = true"
+                        <!-- <button @click="editDeviceOpen = true"
                             class="px-4 py-2 text-sm font-medium text-white bg-yellow-500 rounded-lg hover:bg-yellow-600 transition">
                             Edit Device
-                        </button>
+                        </button> -->
                     </div>
                     {{-- Modal Edit Device --}}
                     @include('components.form-device-edit', ['users' => $users, 'data' => $data])
